@@ -2,7 +2,7 @@ import './App.css';
 import searchMovie from "./api";
 import { useEffect, useState } from "react";
 import SearchIcon from './search.svg'
-import MovieCard from "./MovieCard";
+import MovieList from "./MovieList";
 
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
     const renderMovie = (
         movies !== undefined ? (
             movies.map((movie, index) => {
-                return <MovieCard movie={movie} key={index} id={index+1} />
+                return <MovieList movie={movie} key={index} id={index+1} />
             })
         ) : (
             <h1>404</h1>

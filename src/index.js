@@ -1,6 +1,6 @@
 import App from "./App";
 import React from "react";
-import MovieCard from "./MovieCard";
+import MovieCard from "./MovieList";
 import MoviePage from "./MoviePage"
 import ReactDOM  from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
