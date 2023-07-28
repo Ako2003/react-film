@@ -18,7 +18,7 @@ function MoviePage( { movie, onBack } ) {
                 <p className='additional_movie_data'><strong>Popularity:</strong> {movie.popularity}</p>
                 <p className='additional_movie_data'><strong>Release date:</strong> {movie.release_date}</p>
                 <div>
-                    <p className='additional_movie_data'><strong>Rate:</strong>{movie.vote_average}⭐</p>
+                    <p className='additional_movie_data'><strong>Rate:</strong>{movie.vote_average.toFixed(1)}⭐</p>
                 </div>
                 <p id='last-text' className='additional_movie_data'><strong>Vote Amount: </strong>{movie.vote_count}</p>
                 <img
