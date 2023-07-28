@@ -20,7 +20,7 @@ function MoviePage( { movie, onBack } ) {
                 <div>
                     <p className='additional_movie_data'><strong>Rate:</strong>{movie.vote_average}⭐</p>
                 </div>
-                <p className='additional_movie_data'><strong>Vote Amount: </strong>{movie.vote_count}</p>
+                <p id='last-text' className='additional_movie_data'><strong>Vote Amount: </strong>{movie.vote_count}</p>
                 <img
                     src={movie.poster_path !== null
                       ? 'https://image.tmdb.org/t/p/w500' + movie.poster_path
