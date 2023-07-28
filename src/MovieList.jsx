@@ -41,7 +41,7 @@ function MovieCard({ movie, id }) {
                 />
               </div>
               <div>
-                <span>{movie.vote_average.toFixed(1)}</span>
+                <span>{movie.vote_average.toFixed(1)}⭐</span>
                 <h3>{movie.original_title}</h3>
               </div>
             </div>
